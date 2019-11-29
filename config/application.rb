@@ -8,6 +8,9 @@ Bundler.require(*Rails.groups)
 
 module Testapp
   class Application < Rails::Application
+    config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
+    config.autoload_paths += Dir[Rails.root.join('app', 'api')]
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
@@ -19,5 +22,6 @@ module Testapp
     config.generators do |g|
       g.test_framework :rspec
     end
+
   end
 end

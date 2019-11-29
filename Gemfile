@@ -34,6 +34,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'grape'
+gem 'grape_on_rails_routes'
 gem 'grape-entity'
 gem 'grape-swagger'
 gem 'grape-swagger-entity'
