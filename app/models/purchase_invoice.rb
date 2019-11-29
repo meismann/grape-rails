@@ -1,0 +1,2 @@
+class PurchaseInvoice < Artefact
+end

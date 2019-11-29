@@ -1,0 +1,2 @@
+class ArtefactLineItem < ApplicationRecord
+end
