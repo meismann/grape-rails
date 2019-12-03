@@ -1,5 +1,7 @@
 module Entities
-  class Country < Grape::Entity
+  class Country < Base
+    self.model = ::Country
+
     expose :code
     expose :name
   end

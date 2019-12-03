@@ -1,5 +1,7 @@
 module Entities
-  class Address < Grape::Entity
+  class Address < Base
+    self.model = ::Address
+
     expose :sageone_guid,
       as: :id,
       documentation: {
